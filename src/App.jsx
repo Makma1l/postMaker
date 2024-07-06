@@ -27,7 +27,7 @@ function App() {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          "https://posts-server-xwk3.onrender.com/posts",
+          "https://renderserver-ww79.onrender.com/posts",
           { signal }
         );
         if (!response.ok) {
@@ -77,7 +77,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "https://posts-server-xwk3.onrender.com/posts",
+        "https://renderserver-ww79.onrender.com/posts",
         {
           method: "POST",
           headers: {
@@ -103,7 +103,7 @@ function App() {
   const handleDelete = async (id) => {
     try {
       const response = await fetch(
-        `https://posts-server-xwk3.onrender.com/posts/${id}`,
+        `https://renderserver-ww79.onrender.com/posts/${id}`,
         {
           method: "DELETE",
         }
